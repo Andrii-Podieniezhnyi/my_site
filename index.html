@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My site</title>
+    <link rel="stylesheet" href="./style/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Fjalla+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/icons/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+    <body>
+      <header>
+        <div id="header" class="header__container">
+          <div class="top_bar">
+            <a class="logo" href="#">
+                <img src="./img/icons/logo.png" alt="logo">
+            </a>
+            <ul class="nav__header">
+                <li><a onclick="scrollToElement('services')">Services</a></li>
+                <li><a onclick="scrollToElement('featured_projects')">Featured projects</a></li>
+                <li><a onclick="scrollToElement('about_me')">About me</a></li>
+                <li><a onclick="scrollToElement('contact_me')">Contact me</a></li>
+            </ul>
+            <button class="view_resume">
+                <a href="">View Resume<img src="./img/icons/cv.png" alt="cv"></a>
+            </button>
+        </div>
+        <div class="greeting_container">
+            <div class="line_1">Hi, I am <span>Andrii Podieniezhnyi</span></div>
+            <div class="line_2">A talented <span>Frontend Developer</span> who transforms ideas into stunning</div>
+            <div class="line_3">digital experiences. Let's create something amazing!</div>
+        </div>
+        <!--social icons-->
+        <div class="slogan_container">
+            <p class="slogan"><span>I code stuff.</span></p>
+        </div>
+        <div class="social_icons__container">
+            <ul class="wrapper">
+                <li class="icon linkedin">
+                  <span class="tooltip">LinkedIn</span>
+                  <a href="https://www.linkedin.com/in/andrii-podieniezhnyi/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+                <li class="icon gmail">
+                  <span class="tooltip">Gmail</span>
+                  <a href="mailto:lincolnap23@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                </li>
+                <li class="icon telegram">
+                    <span class="tooltip">Telegram</span>
+                    <a href="https://t.me/Andrii_Podieniezhnyi" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                </li>
+                <li class="icon github">
+                  <span class="tooltip">Github</span>
+                  <a href="https://github.com/Andrii-Podieniezhnyi" target="_blank"><i class="fab fa-github"></i></a>
+                </li>
+            </ul>
+        </div>
+        <!-- Loading -->
+        <section>
+          <div class="loading">
+            <h1 class="loading-title">loading</h1>
+            <div class="loading-progress"></div>
+          </div>
+        </section>
+        </div>      
+       </header>
+       <main>
+          <section>
+              <div id="services" class="services_container">
+                <div class="title">SERVICES</div>
+                <div class="title_description">What <span>I Do</span></div>
+                <div class="services_cards">
+                    <section class="main">
+                        <div class="wrap wrap--1">
+                          <div class="container container--1">
+                            <span class="card_number">01</span>
+                            <span><i class="fa-solid fa-code"></i></span>
+                            <span class="card_title">Web Development</span>
+                            <span class="bottom_line"></span>
+                            <span class="card_description">I use my knowledge of various programming language such as HTML5, CSS3, JAVASCRIPT to build digital solutions for users.</span>
+                          </div>
+                        </div>
+                        <div class="wrap wrap--2">
+                          <div class="container container--2">
+                            <span class="card_number">02</span>
+                            <span><i class="fa-solid fa-eye"></i></span>
+                            <span class="card_title">UI Design</span>
+                            <span class="bottom_line"></span>
+                            <span class="card_description">Crafting user-centric digital experiences that seamlessly blend aesthetics and functionality.</span>
+                          </div>
+                        </div>
+                        <div class="wrap wrap--3">
+                          <div class="container container--3">
+                            <span class="card_number">03</span>
+                            <span><i class="fa-solid fa-pen-to-square"></i></span>
+                            <span class="card_title">Content Writing</span>
+                            <span class="bottom_line"></span>
+                            <span class="card_description">Creating interesting content that captivates. A masterful combination of creativity and research to create the right product.</span>
+                          </div>
+                        </div>
+                    </section>
+                </div>
+              </div>
+          </section>
+          <section>
+            <div id="featured_projects" class="portfolio_container">
+              <div id="title_portfolio" class="title">PORTFOLIO</div>
+              <div class="title_description">Featured <span>projects</span></div>
+              <!--Slider of projects-->
+              <div class="projects_slider__container">
+                <div class="options">
+                   <div class="option active" style="--optionBackground:url(/img/screens_of_projects/project_restaurant__quantum-hub.png);">
+                      <div class="shadow"></div>
+                      <div class="label">
+                         <div class="info">
+                            <div class="main">Quantum Hub</div>
+                            <div class="sub">The restaurant</div>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="option" style="--optionBackground:url(/img/screens_of_projects/project_store_`тут`.png);">
+                      <div class="shadow"></div>
+                      <div class="label">
+                         <div class="info">
+                            <div class="main">Buy here</div>
+                            <div class="sub">Grocery store</div>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="option" style="--optionBackground:url(/img/screens_of_projects/project_store__\ `Sportif\ USA`.png);">
+                      <div class="shadow"></div>
+                      <div class="label">
+                         <div class="info">
+                            <div class="main">Sportif USA</div>
+                            <div class="sub">Clothing store</div>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="option" style="--optionBackground:url(/img/screens_of_projects/Dapper_Bully.png);">
+                      <div class="shadow"></div>
+                      <div class="label">
+                         <div class="info">
+                            <div class="main">Dapper bulls</div>
+                            <div class="sub">Barbershop</div>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="option" style="--optionBackground:url(/img/screens_of_projects/project_pizza.png);">
+                      <div class="shadow"></div>
+                      <div class="label">
+                         <div class="info">
+                            <div class="main">Pizza</div>
+                            <div class="sub">Pizzeria constructor</div>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="option" style="--optionBackground:url(/img/screens_of_projects/registration_form__screen.png);">
+                     <div class="shadow"></div>
+                     <div class="label">
+                        <div class="info">
+                           <div class="main">Kreative</div>
+                           <div class="sub">The registration form</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="option" style="--optionBackground:url(/img/screens_of_projects/zaponka.png);">
+                     <div class="shadow"></div>
+                     <div class="label">
+                        <div class="info">
+                           <div class="main">Zaponka</div>
+                           <div class="sub">Men's clothing store</div>
+                        </div>
+                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="skills__container">
+              <div class="title">SKILLS</div>
+              <div class="title_description">Technical <span>skills</span></div>
+              <!--Skills cards-->
+              <div class="skills-cards">
+                <div href="#" class="card html">
+                  <div class="cor__cobertura"></div>
+                  <div class="circulo">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14.7542 68.0025L9.13672 5H70.8617L65.2367 67.9925L39.9617 75L14.7542 68.0025Z" fill="#E44F26">
+                      </path>
+                      <path d="M40 69.6448L60.425 63.9823L65.23 10.1523H40V69.6448Z" fill="#F1662A"></path>
+                      <path
+                        d="M40 33.5179H29.775L29.07 25.6054H40V17.8779H20.625L20.81 19.9529L22.7075 41.2454H40V33.5179V33.5179ZM40 53.5854L39.965 53.5954L31.36 51.2729L30.81 45.1104H23.0525L24.135 57.2404L39.965 61.6354L40 61.6254V53.5854Z"
+                        fill="#EBEBEB"></path>
+                      <path
+                        d="M39.9727 33.5179V41.2454H49.4877L48.5927 51.2679L39.9727 53.5929V61.6329L55.8152 57.2404L55.9302 55.9354L57.7452 35.5929L57.9352 33.5179H39.9727V33.5179ZM39.9727 17.8779V25.6054H58.6377L58.7927 23.8704L59.1452 19.9529L59.3302 17.8779H39.9727V17.8779Z"
+                        fill="white"></path>
+                    </svg>
+                  </div>
+                  <p>HTML</p>
+                </div>
+                <div href="#" class="card css">
+                  <div class="cor__cobertura"></div>
+                  <div class="circulo">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14.7556 68.0025L9.14062 5H70.8606L65.2381 67.9925L39.9631 75L14.7556 68.0025Z" fill="#1572B6">
+                      </path>
+                      <path d="M40 69.6448L60.425 63.9823L65.23 10.1523H40V69.6448Z" fill="#33A9DC"></path>
+                      <path d="M40 32.9779H50.225L50.93 25.0654H40V17.3379H59.375L59.19 19.4104L57.2925 40.7054H40V32.9779V32.9779Z"
+                        fill="white"></path>
+                      <path
+                        d="M40.0471 53.0449L40.0121 53.0549L31.4071 50.7299L30.8571 44.5674H23.0996L24.1821 56.6999L40.0096 61.0949L40.0471 61.0849V53.0449V53.0449Z"
+                        fill="#EBEBEB"></path>
+                      <path
+                        d="M49.567 40.3779L48.637 50.7254L40.0195 53.0504V61.0904L55.8595 56.7004L55.977 55.3954L57.3195 40.3779H49.567V40.3779Z"
+                        fill="white"></path>
+                      <path
+                        d="M40.0274 17.3379V25.0654H21.3624L21.2074 23.3279L20.8549 19.4104L20.6699 17.3379H40.0274V17.3379ZM39.9999 32.9779V40.7054H31.5024L31.3474 38.9679L30.9974 35.0504L30.8124 32.9779H39.9999V32.9779Z"
+                        fill="#EBEBEB"></path>
+                    </svg>
+                  </div>
+                  <p>CSS</p>
+                </div>
+                <div href="#" class="card js">
+                  <div class="cor__cobertura"></div>
+                  <div class="circulo">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 5H75V75H5V5Z" fill="#F5DE19"></path>
+                      <path
+                        d="M52.0222 59.688C52.6186 60.8995 53.5452 61.9178 54.6953 62.6255C55.8453 63.3332 57.1719 63.7015 58.5222 63.688C61.2472 63.688 62.9897 62.3255 62.9897 60.438C62.9897 58.188 61.1997 57.383 58.1997 56.0705L56.5547 55.3655C51.8047 53.343 48.6547 50.8105 48.6547 45.4555C48.6547 40.523 52.4047 36.7655 58.2872 36.7655C60.1915 36.628 62.0941 37.0542 63.7577 37.9909C65.4213 38.9276 66.7723 40.3334 67.6422 42.033L62.4997 45.3205C62.1647 44.4778 61.5815 43.7568 60.8274 43.2532C60.0733 42.7496 59.1839 42.4871 58.2772 42.5005C57.8816 42.4609 57.4821 42.5041 57.1041 42.6275C56.7262 42.7508 56.378 42.9515 56.0819 43.2168C55.7858 43.4821 55.5482 43.8062 55.3843 44.1684C55.2203 44.5306 55.1336 44.9229 55.1297 45.3205C55.1297 47.293 56.3522 48.093 59.1747 49.3205L60.8197 50.0255C66.4097 52.423 69.5697 54.8655 69.5697 60.358C69.5697 66.2805 64.9172 69.5255 58.6697 69.5255C56.2354 69.6806 53.8083 69.1279 51.6812 67.9342C49.5541 66.7404 47.8179 64.9566 46.6822 62.798L52.0222 59.688ZM28.7847 60.258C29.8172 62.0905 30.7572 63.6405 33.0172 63.6405C35.1772 63.6405 36.5422 62.7955 36.5422 59.508V37.1405H43.1197V59.5955C43.1197 66.4055 39.1197 69.5055 33.2972 69.5055C31.2391 69.618 29.1951 69.1051 27.4339 68.0342C25.6727 66.9633 24.2768 65.3846 23.4297 63.5055L28.7847 60.258Z"
+                        fill="black"></path>
+                    </svg>
+                  </div>
+                  <p>JS</p>
+                </div>
+                <div href="#" class="card git">
+                  <div class="cor__cobertura"></div>
+                  <div class="circulo">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="34.0195" y="31.0332" width="17" height="33" fill="white"></rect>
+                      <rect x="47.0195" y="24.0332" width="17" height="33" fill="white"></rect>
+                      <rect x="20" y="18.5" width="17.3" height="40" transform="rotate(-45 20 18.5)" fill="white"></rect>
+                      <path
+                        d="M78.4912 36.4355L43.5625 1.50867C41.5522 -0.502891 38.2897 -0.502891 36.2769 1.50867L29.0237 8.7618L38.2247 17.9627C40.3628 17.2402 42.8147 17.7249 44.5191 19.4293C46.2316 21.1446 46.7128 23.6174 45.9728 25.7624L54.84 34.6299C56.9853 33.8909 59.4606 34.369 61.1741 36.0852C63.5688 38.479 63.5688 42.3587 61.1741 44.754C58.7788 47.1496 54.8991 47.1496 52.5025 44.754C50.7012 42.9509 50.2563 40.3055 51.1681 38.0865L42.8988 29.8171L42.8978 51.5787C43.4973 51.8751 44.0448 52.2666 44.5191 52.738C46.9137 55.1318 46.9137 59.0118 44.5191 61.409C42.1237 63.8034 38.2422 63.8034 35.8503 61.409C33.4556 59.0118 33.4556 55.1321 35.8503 52.7384C36.4242 52.1642 37.1062 51.7095 37.8569 51.4005V29.4362C37.1051 29.1293 36.4227 28.6743 35.8503 28.0984C34.0359 26.2865 33.5997 23.6243 34.5294 21.3965L25.4594 12.3255L1.50937 36.274C-0.503125 38.2874 -0.503125 41.5502 1.50937 43.5621L36.4387 78.4896C38.4497 80.5015 41.7116 80.5015 43.725 78.4896L78.4909 43.7243C80.5028 41.7118 80.5028 38.4471 78.4909 36.4355"
+                        fill="#DE4C36"></path>
+                    </svg>
+                  </div>
+                  <p>GIT</p>
+                </div>
+                <div href="#" class="card scss">
+                  <div class="cor__cobertura"></div>
+                  <div class="circulo">
+                    <i class="fa-brands fa-sass"></i>
+                  </div>
+                  <p>SCSS</p>
+                </div>
+                <div href="#" class="card figma">
+                  <div class="cor__cobertura"></div>
+                  <div class="circulo">
+                    <svg viewBox="-2 0 21 16" xmlns="http://www.w3.org/2000/svg" fill="none">
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <path fill="#1ABCFE" d="M8.55 8c0-1.289 1.019-2.333 2.275-2.333C12.082 5.667 13.1 6.71 13.1 8c0 1.289-1.018 2.333-2.275 2.333C9.57 10.333 8.55 9.29 8.55 8z">
+                        </path>
+                        <path fill="#0ACF83" d="M4 12.667c0-1.289 1.019-2.334 2.275-2.334H8.55v2.334C8.55 13.955 7.531 15 6.275 15S4 13.955 4 12.667z">
+                        </path>
+                        <path fill="#FF7262" d="M8.55 1v4.667h2.275c1.257 0 2.275-1.045 2.275-2.334C13.1 2.045 12.082 1 10.825 1H8.55z"></path>
+                        <path fill="#F24E1E" d="M4 3.333c0 1.289 1.019 2.334 2.275 2.334H8.55V1H6.275C5.019 1 4 2.045 4 3.333z"></path>
+                        <path fill="#A259FF" d="M4 8c0 1.289 1.019 2.333 2.275 2.333H8.55V5.667H6.275C5.019 5.667 4 6.71 4 8z"></path>
+                      </g>
+                    </svg>
+                  </div>
+                  <p>FIGMA</p>
+                </div>
+                <div href="#" class="card bem">
+                  <div class="cor__cobertura"></div>
+                  <div class="circulo">
+                    <svg viewBox="-110 -39 450 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000">
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                      <g id="SVGRepo_iconCarrier"> 
+                      <g fill="#010101"> 
+                      <path d="M0,32.6915521 L59.8506876,32.6915521 L59.8506876,50.2946955 L0,50.2946955 L0,32.6915521 Z M0,0 L59.8506876,0 L59.8506876,17.6031434 L0,17.6031434 L0,0 Z M107.379175,65.1316306 L0,65.1316306 L0,82.7347741 L103.355599,82.7347741 C114.671906,82.7347741 141.076621,82.9862475 150.884086,98.8290766 L150.884086,89.021611 C146.10609,73.4302554 132.023576,65.1316306 107.379175,65.1316306 L107.379175,65.1316306 Z M107.630648,97.8231827 L1.42108547e-14,97.8231827 L1.42108547e-14,115.426326 L103.355599,115.426326 C128.502947,115.426326 144.345776,116.43222 150.884086,119.952849 L150.884086,112.157171 C145.854617,99.8349705 124.730845,97.8231827 107.630648,97.8231827 L107.630648,97.8231827 Z M107.379175,180.80943 L0,180.80943 L0,163.206287 L103.355599,163.206287 C114.671906,163.206287 141.076621,162.954813 150.884086,147.111984 L150.884086,156.91945 C146.10609,172.510806 132.023576,180.80943 107.379175,180.80943 L107.379175,180.80943 Z M107.630648,148.117878 L1.42108547e-14,148.117878 L1.42108547e-14,130.514735 L103.355599,130.514735 C128.502947,130.514735 144.345776,129.508841 150.884086,125.988212 L150.884086,133.78389 C145.854617,146.10609 124.730845,148.117878 107.630648,148.117878 L107.630648,148.117878 Z M177.037328,211.237721 L256,211.237721 L256,200.424361 L179.300589,200.424361 C172.510806,200.424361 156.416503,200.172888 150.632613,190.868369 L150.632613,196.903733 C153.398821,206.208251 161.948919,211.237721 177.037328,211.237721 L177.037328,211.237721 Z M176.785855,191.371316 L255.748527,191.371316 L255.748527,180.557957 L179.300589,180.557957 C163.960707,180.557957 154.404715,180.05501 150.632613,177.791749 L150.632613,182.569745 C153.650295,190.113949 166.475442,191.371316 176.785855,191.371316 L176.785855,191.371316 Z"> </path> </g> </g></svg>
+                  </div>
+                  <p>BEM</p>
+                </div>
+                <div href="#" class="card gulp">
+                  <div class="cor__cobertura"></div>
+                  <div class="circulo">
+                    <i class="fa-brands fa-gulp"></i>
+                  </div>
+                  <p>GULP</p>
+                </div>
+                <div href="#" class="card webpack">
+                  <div class="cor__cobertura"></div>
+                  <div class="circulo">
+                    <svg viewBox="-76 0 410 290" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <polygon fill="#FFFFFF" points="128 0.0483018868 256 72.4528302 256 217.310189 128 289.714717 0 217.310189 0 72.4528302"> </polygon> <path d="M233.153208,212.286792 L132.250566,269.427925 L132.250566,224.990189 L195.139623,190.357736 L233.153208,212.286792 Z M240.060377,206.055849 L240.060377,86.6535849 L203.157736,107.954717 L203.157736,184.754717 L240.060377,206.055849 Z M22.4603774,212.286792 L123.363019,269.379623 L123.363019,224.941887 L60.4739623,190.357736 L22.4603774,212.286792 L22.4603774,212.286792 Z M15.5532075,206.055849 L15.5532075,86.6535849 L52.4558491,107.954717 L52.4558491,184.754717 L15.5532075,206.055849 L15.5532075,206.055849 Z M19.8520755,78.925283 L123.363019,20.3833962 L123.363019,63.3720755 L57.0445283,99.84 L56.5132075,100.129811 L19.8520755,78.925283 L19.8520755,78.925283 Z M235.713208,78.925283 L132.250566,20.3833962 L132.250566,63.3720755 L198.520755,99.8883019 L199.052075,100.178113 L235.713208,78.925283 L235.713208,78.925283 Z" fill="#8ED6FB"> </path> <path d="M123.363019,214.846792 L61.3433962,180.697358 L61.3433962,113.123019 L123.363019,148.914717 L123.363019,214.846792 L123.363019,214.846792 Z M132.250566,214.846792 L194.270189,180.74566 L194.270189,113.123019 L132.250566,148.914717 L132.250566,214.846792 Z M65.4973585,105.298113 L127.806792,71.0520755 L190.067925,105.298113 L127.806792,141.234717 L65.4973585,105.298113 L65.4973585,105.298113 Z" fill="#1C78C0"> </path> </g> </g></svg>
+                  </div>
+                  <p>WEBPACK</p>
+                </div>
+                <div href="#" class="card api">
+                  <div class="cor__cobertura"></div>
+                  <div class="circulo">
+                    <svg viewBox="-7 0 38 24" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><rect width="24" height="24" fill="none"></rect><path d="M20,6H4A2,2,0,0,0,2,8v8a2,2,0,0,0,2,2H20a2,2,0,0,0,2-2V8A2,2,0,0,0,20,6ZM9.29,14.8,9,13.73H7.16L6.87,14.8H5.17L7,9.07H9.09L11,14.8Zm6.34-3.14a1.7,1.7,0,0,1-.36.64,1.82,1.82,0,0,1-.67.44,2.75,2.75,0,0,1-1,.17h-.44V14.8H11.6V9.09h2a2.43,2.43,0,0,1,1.62.47,1.67,1.67,0,0,1,.55,1.35A2.36,2.36,0,0,1,15.63,11.66Zm2.58,3.14H16.66V9.09h1.55ZM8.45,11.53l.24.93H7.48l.24-.93c0-.13.08-.28.12-.47s.09-.38.13-.57a4.63,4.63,0,0,0,.1-.48c0,.13.07.29.11.5l.15.58Zm5.59-1a.57.57,0,0,1,.16.43.75.75,0,0,1-.11.42.59.59,0,0,1-.27.22.9.9,0,0,1-.37.07h-.31V10.34h.4A.63.63,0,0,1,14,10.51Z" fill-rule="evenodd"></path></g></svg>
+                  </div>
+                  <p>API</p>
+                </div>
+              </div>
+            </div>  
+          </section>
+          <section>
+            <div id="about_me" class="about_me__container">
+              <div id="about_me__title" class="title">MY WAY</div>
+              <div class="title_description">About <span>me</span></div>
+              <div class="about_me__content__container">
+                <div class="left_block"></div>
+                <div class="right_block">I am a highly motivated front-end developer who is passionate about creating visually appealing and user-friendly websites. I am eager to contribute to a dynamic team and continue to learn and grow as a front-end developer. My motivation is to be better today than yesterday, so personal development and work for the result set new goals that I achieve.
+                <div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div id="contact_me" class="contact_me__container">
+              <div id="contact_me__title" class="title">GET IN TOUCH</div>
+              <div class="title_description">Contact <span>me</span></div>
+              <div class="get_in_touch__line">I am currently open to full-time, contract or part-time opportunities in</div>
+              <div class="get_in_touch__line">Front End Development.</div>
+              <div class="qr_code__container">
+                <img src="/img/qr-code/qr-code.png" alt="qr-code">
+              </div>
+            </div>
+          </section>                  
+       </main>
+       <footer>
+        <section>
+          <div class="footer_container">
+            <div class="footer_line"></div>
+            <div class="footer__text_container">
+              <span>Developed by me</span>
+              <span>Andrii Podieniezhnyi</span> 
+            </div>
+          </div>
+        </section>
+        <script src="/code/three.r134.min.js"></script>
+        <script src="/code/vanta.net.min.js"></script>
+        <script src="/code/index.js"></script>
+       </footer>
+    </body>
+</html>
