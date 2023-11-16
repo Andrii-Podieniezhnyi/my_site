@@ -159,7 +159,7 @@ const fakeLoaderInterval = window.setInterval(function() {
       loading.style.transform = 'translateY(calc(100% + 10px)';
     }, 400);
 
-    headerContainer.style.backgroundImage = 'url("/img/JavaScript-code__for_background.webp")';
+    headerContainer.style.backgroundImage = 'url("./img/JavaScript-code__for_background.webp")';
   }
   
 }, getRandomArbitrary(100, 500))
