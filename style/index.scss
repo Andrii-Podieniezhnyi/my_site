@@ -17,6 +17,7 @@ a{
 
 
 
+
 .header__container{
   height: 100vh;
 }
@@ -294,7 +295,6 @@ a{
 .title{
   color: $font_color_1;
   text-align: center;
-  margin-top: 50px;
   display: flex;
   justify-content: center;
   font-family: Courier, monospace;
@@ -318,6 +318,10 @@ a{
 
 .services_cards{
   display: flex;
+}
+
+#services_title{
+  margin-top: 50px;
 }
 
 .main{
@@ -464,9 +468,9 @@ $optionDefaultColours: #ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
    align-items:center;
    overflow:hidden;
    height: 68vh;
-   width: 100%;
    font-family: 'Roboto', sans-serif;
    transition:.25s;
+   padding: 0 15px 0 15px;
 
     .dark {
       background: #232223;
@@ -611,6 +615,10 @@ $optionDefaultColours: #ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
 
 // Skills container
 
+#skills_title{
+  margin-top: 133px;
+}
+
 .skills__container, .about_me__container{
   display: flex;
   justify-content: center;
@@ -644,7 +652,7 @@ $optionDefaultColours: #ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
 }
 
 #about_me__title{
-  margin-top: 110px;
+  margin-top: 133px;
 }
 
 
@@ -995,17 +1003,27 @@ $optionDefaultColours: #ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
   }
 }
 
-@media (max-width: 664px){
-  
-  .header__container {
-    height: 110vh;
-  }
-}
+
 
 @media (max-width: 531px){
 
   .header__container {
     height: 115vh;
+  }
+}
+
+@media (max-width: 475px){
+
+  .projects_slider__container{
+
+    .options{
+      min-width: 100%;
+    }
+
+    .active{
+      flex-grow: 10 !important;
+      max-width: 100%;
+    }
   }
 }
 
@@ -1020,5 +1038,26 @@ $optionDefaultColours: #ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
   
   .header__container {
     height: 125vh;
+  }
+
+  .container{
+    width: 65%;
+    height: auto;
+    flex: 0 0 65%;
+  }
+
+  .wrap{
+    justify-content: center;
+  }
+
+  .bottom_line{
+    width: auto;
+  }
+}
+
+@media (max-width: 375px){
+
+  .vanta-canvas{
+    width: 100% !important;
   }
 }
