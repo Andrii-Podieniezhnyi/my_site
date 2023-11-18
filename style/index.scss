@@ -1005,12 +1005,7 @@ $optionDefaultColours: #ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
 
 
 
-@media (max-width: 531px){
 
-  .header__container {
-    height: 115vh;
-  }
-}
 
 @media (max-width: 475px){
 
@@ -1027,19 +1022,10 @@ $optionDefaultColours: #ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
   }
 }
 
-@media (max-width: 464px){
-  
-  .header__container {
-    height: 120vh;
-  }
-}
+
 
 @media (max-width: 454px){
   
-  .header__container {
-    height: 125vh;
-  }
-
   .container{
     width: 65%;
     height: auto;
