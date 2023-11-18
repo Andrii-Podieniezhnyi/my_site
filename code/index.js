@@ -1,6 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  //window.scrollTo(0, 0);
-
   scrollToElement('header');
 })
 
@@ -159,7 +157,7 @@ const fakeLoaderInterval = window.setInterval(function() {
       loading.style.transform = 'translateY(calc(100% + 10px)';
     }, 400);
 
-    headerContainer.style.backgroundImage = 'url("./img/JavaScript-code__for_background.webp")';
+    headerContainer.style.backgroundImage = 'url("./img/JavaScript-code__for_background.png")';
   }
   
 }, getRandomArbitrary(100, 500))
