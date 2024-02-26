@@ -20,6 +20,8 @@ a{
 
 .header__container{
   height: 100vh;
+  background-size: cover;
+  width: -webkit-fill-available;
 }
 
 .top_bar{
