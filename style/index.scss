@@ -285,7 +285,7 @@ a {
 }
 
 #title_portfolio {
-  margin-top: 200px;
+  margin-top: 50px;
 }
 
 .title {
@@ -308,8 +308,6 @@ a {
 
 /* ---------------- CARDS ---------------- */
 
-/* ---------------- CARDS ---------------- */
-
 .services_cards {
   display: flex;
   justify-content: center;
@@ -325,33 +323,27 @@ a {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  gap: 45px;
+  padding: 0 20px;
   width: 100%;
 }
 
 .wrap {
-  margin-top: 2rem;
   display: flex;
   transform-style: preserve-3d;
   perspective: 1000px;
   cursor: pointer;
-  width: 345px;
-  height: 280px;
+  width: 345px;  
   justify-content: center;
   position: relative;
   z-index: 0;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 
-  /* Tilt при hover через JS або :hover з простим ефектом */
-  &:hover {
-    transform: scale(1.05) rotateX(var(--rX, 0deg)) rotateY(var(--rY, 0deg));
-    z-index: 10;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-  }
+
 }
 
 .container {
   width: 100%;
-  height: 100%;
   border-radius: 1.6rem;
   padding: 20px;
   display: flex;
@@ -859,10 +851,6 @@ $optionDefaultColours: #ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
   margin-top: 60px;
 }
 
-.title_description{
-  margin-bottom: 15px;
-}
-
 .get_in_touch__line{
   color: #cdcdcd;
   font-size: larger;
@@ -929,8 +917,6 @@ $optionDefaultColours: #ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
   flex-direction: column;
 
   .footer_line{
-    border-top: 3px solid #4e4e4e;
-    margin-top: 35px;
     display: flex;
     width: 100%;
   }
