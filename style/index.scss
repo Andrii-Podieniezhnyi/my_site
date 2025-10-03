@@ -6,94 +6,95 @@ $bg_color_1: #131313;
 $bg_color_2: #1d1d1d;
 
 body {
-    margin: 0 auto;
-    font-family: $main_font;
+  margin: 0 auto;
+  font-family: $main_font;
 }
 
-a{
-    text-decoration: none;
-    font-weight: 400;
+a {
+  text-decoration: none;
+  font-weight: 400;
 }
 
+/* ---------------- HEADER ---------------- */
 
-
-
-.header__container{
+.header__container {
   height: 100vh;
   background-size: cover;
   width: -webkit-fill-available;
 }
 
-.top_bar{
+.top_bar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-left: 25px;
+  margin-top: 15px;
+}
+
+.logo,
+.view_resume {
+  height: 70px;
+}
+
+.view_resume {
+  background-color: $main_color;
+  border: none;
+  margin-right: 20px;
+  margin-top: 15px;
+  border-radius: 10px;
+  width: 165px;
+  height: 45px;
+  padding: 0;
+
+  a {
+    color: black;
     display: flex;
-    width: 100%;
-    justify-content: space-between;
-}
-
-.logo{
-    margin-left: 25px;
-    margin-top: 15px;
-}
-
-.logo, .view_resume{
-    height: 70px;
-}
-
-.view_resume{
-    background-color: $main_color;
-    border: none;
-    margin-right: 20px;
-    margin-top: 15px;
-    border-radius: 10px;
-    width: 165px;
-    height: 45px;
-    padding: 0;
-
-    a{
-        color: black;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: $main_font;
-        height: 100%;
-        width: 100%;
-    }
-
-    img{
-        margin-left: 10px;
-    }
-}
-
-.greeting_container{
-    color: #cdcdcd;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    font-size: larger;
-    margin-top: 155px;
+    justify-content: center;
+    font-family: $main_font;
+    height: 100%;
+    width: 100%;
+  }
 
-    span{
-      color: $main_color;
-    }
-
-    .line_1{
-      color: $font_color_2;
-      font-weight: 700;
-      font-size: 30px;
-    }
-
-    .line_1, .line_2, .line_3{
-      text-align: center;
-    }
+  img {
+    margin-left: 10px;
+  }
 }
 
-.greeting_container, .get_in_touch__line{
+.greeting_container {
+  color: #cdcdcd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: larger;
+  margin-top: 155px;
+
+  span {
+    color: $main_color;
+  }
+
+  .line_1 {
+    color: $font_color_2;
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  .line_1,
+  .line_2,
+  .line_3 {
+    text-align: center;
+  }
+}
+
+.greeting_container,
+.get_in_touch__line {
   padding: 0 15px 0 15px;
 }
 
-
-// social links
-
+/* ---------------- SLOGAN ---------------- */
 
 .slogan_container {
   text-align: center;
@@ -102,7 +103,7 @@ a{
 .slogan {
   position: relative;
   display: block;
-  overflow: hidden; 
+  overflow: hidden;
   width: 0em;
   height: 1.25em;
   margin: 1em auto;
@@ -128,7 +129,7 @@ a{
 
 @keyframes typing {
   from { width: 0em; }
-  to   { width: 8em; }
+  to { width: 8em; }
 }
 
 @keyframes blink-start {
@@ -141,20 +142,18 @@ a{
   50% { border-color: transparent; }
 }
 
+/* ---------------- SOCIAL ---------------- */
 
+.social_icons__container {
+  text-align: center;
 
+  ul {
+    padding: 0;
+  }
 
-
-.social_icons__container{
-    text-align: center;
-
-    ul{
-        padding: 0;
-    }
-
-    i{
-      font-size: 25px;
-    }
+  i {
+    font-size: 25px;
+  }
 }
 
 .wrapper {
@@ -178,9 +177,9 @@ a{
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
-    a{
-        color: black;
-    }
+  a {
+    color: black;
+  }
 }
 
 .wrapper .tooltip {
@@ -216,13 +215,13 @@ a{
   pointer-events: auto;
 }
 
-.wrapper a{
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
+.wrapper a {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
 }
 
 .wrapper .icon:hover span,
@@ -258,16 +257,15 @@ a{
   color: #ffffff;
 }
 
-
-.wrapper li{
-    animation: icons .2s ease-out 0s 1 normal forwards;
-    opacity: 0;
+.wrapper li {
+  animation: icons .2s ease-out 0s 1 normal forwards;
+  opacity: 0;
 }
 
 @keyframes icons {
-    0%    { transform: translateY(3em); opacity: 0; }
-    70%   { transform: translateY(-.5em); opacity: 1; }
-    100%  { transform: translateY(0em); opacity: 1; }
+  0% { transform: translateY(3em); opacity: 0; }
+  70% { transform: translateY(-.5em); opacity: 1; }
+  100% { transform: translateY(0em); opacity: 1; }
 }
 
 .wrapper li:nth-child(1) { animation-delay: 3s; }
@@ -275,12 +273,10 @@ a{
 .wrapper li:nth-child(3) { animation-delay: 3.6s; }
 .wrapper li:nth-child(4) { animation-delay: 3.9s; }
 
+/* ---------------- MAIN ---------------- */
 
-// main
-
-
-
-.services_container, .portfolio_container{
+.services_container,
+.portfolio_container {
   background-color: $bg_color_1;
   display: flex;
   flex-direction: column;
@@ -288,13 +284,11 @@ a{
   width: 100%;
 }
 
-#title_portfolio{
-  margin-top: 133px;
+#title_portfolio {
+  margin-top: 200px;
 }
 
-
-
-.title{
+.title {
   color: $font_color_1;
   text-align: center;
   display: flex;
@@ -302,31 +296,32 @@ a{
   font-family: Courier, monospace;
 }
 
-.title_description{
+.title_description {
   color: $font_color_2;
   text-align: center;
   font-size: 35px;
 
-  span{
+  span {
     color: $main_color;
   }
 }
 
+/* ---------------- CARDS ---------------- */
 
+/* ---------------- CARDS ---------------- */
 
-
-
-// cards
-
-.services_cards{
+.services_cards {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-#services_title{
+#services_title {
   margin-top: 50px;
 }
 
-.main{
+.main {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -337,128 +332,107 @@ a{
   margin-top: 2rem;
   display: flex;
   transform-style: preserve-3d;
-  transform: perspective(100rem);
-
+  perspective: 1000px;
   cursor: pointer;
+  width: 345px;
+  height: 280px;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+  /* Tilt при hover через JS або :hover з простим ефектом */
+  &:hover {
+    transform: scale(1.05) rotateX(var(--rX, 0deg)) rotateY(var(--rY, 0deg));
+    z-index: 10;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  }
 }
 
 .container {
-  --rX: 0;
-  --rY: 0;
-  --bX: 50%;
-  --bY: 80%;
-
-  flex: 0 0 78.7%;
-  width: 345px;
-  height: 280px;
+  width: 100%;
+  height: 100%;
   border-radius: 1.6rem;
-  padding: 45px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  
-
   position: relative;
-  transform: rotateX(calc(var(--rX) * .5deg)) rotateY(calc(var(--rY) * .5deg));
   background-color: #262626;
-  //box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%, .2);
+  transition: transform 0.6s ease, background-color 0.3s ease, box-shadow 0.4s ease;
 
-  transition: transform .6s 1s;
+  .card_title,
+  .card_description,
+  i {
+    color: $font_color_1;
+    transition: color 0.3s ease;
+  }
+
+  &:hover {
+    background-color: $main_color;
+    box-shadow: 0 0 20px $main_color, 0 0 40px rgba(2, 218, 197, 0.5);
+    transform: translateY(-5px) scale(1.02);
+  }
+
+  &:hover .card_title,
+  &:hover .card_description,
+  &:hover i {
+    color: #020100;
+  }
 }
 
-.container::before,
-.container::after {
-  content: "";
-
-  width: 2rem;
-  height: 2rem;
-  border: 1px solid #fff;
-
-  position: absolute;
-  z-index: 2;
-
-  opacity: .3;
-  transition: .3s;
-}
-
-.container::before {
-  top: 2rem;
-  right: 2rem;
-
-  border-bottom-width: 0;
-  border-left-width: 0;
-}
-
-.container::after {
-  bottom: 2rem;
-  left: 2rem;
-
-  border-top-width: 0;
-  border-right-width: 0;
-}
-
-.container--active {
-  transition: none;
-}
-
-.container p {
-  color: hsla(0, 0%, 100%, .6);
-  font-size: 2.2rem;
-}
-
-.wrap:hover .container::before,
-.wrap:hover .container::after {
-  width: calc(100% - 4rem);
-  height: calc(100% - 4rem);
-}
-
-.card_number{
+.card_number {
   display: flex;
   justify-content: flex-end;
   font-size: 65px;
   height: 75px;
   opacity: 0.3;
-}
-
-.container:hover{
-  background-color: $main_color;
-}
-
-.container i, .card_title, .card_description{
-  color: $font_color_1;
-}
-
-.container:hover .card_title,
-.container:hover .fa-solid,
-.container:hover .card_description{
-  color: #020100;
-}
-
-.container:hover .bottom_line{
-  border-bottom: 2px solid #020100;
-}
-
-.container:hover .card_number{
-  opacity: unset;
+  transition: opacity 0.3s ease;
 }
 
 .fa-solid {
   font-size: 30px;
 }
 
-.card_title{
+.card_title {
   margin-top: 15px;
   font-size: 25px;
+  color: $font_color_1;
+  transition: color 0.3s ease;
 }
 
-.bottom_line{
+.card_description {
+  color: $font_color_1;
+  transition: color 0.3s ease;
+}
+
+.bottom_line {
   width: 232px;
   border-bottom: 2px solid $font_color_1;
   margin-top: 10px;
   margin-bottom: 10px;
+  transition: border-color 0.3s ease;
+}
+
+.container:hover .bottom_line {
+  border-bottom: 2px solid #020100;
+}
+
+.container:hover .card_number {
+  opacity: 1;
 }
 
 
-// Slider of projects 
+.container--active {
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+
+
+
+
+
+/*----------------Slider of projects---------------- */  
 
 
 $optionDefaultColours: #ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
@@ -469,7 +443,7 @@ $optionDefaultColours: #ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
    justify-content:center;
    align-items:center;
    overflow:hidden;
-   height: 68vh;
+   height: 35vh;
    font-family: 'Roboto', sans-serif;
    transition:.25s;
    padding: 0 15px 0 15px;
